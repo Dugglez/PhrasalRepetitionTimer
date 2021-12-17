@@ -25,6 +25,7 @@ def main():
         sentence_to_write = ""
         for i in range(sentences_int):
             rand_sentence = random.choice(sentences)
+            rand_sentence = rand_sentence.rstrip(os.linesep)
             sentence_to_write += rand_sentence
             sentence_to_write += " "
         os.system("cls")
